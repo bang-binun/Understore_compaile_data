@@ -78,3 +78,13 @@ if file1 and file2:
 
         except Exception as e:
             st.error(f"Terjadi kesalahan: {e}")
+            # --- FOOTER ---
+st.markdown(
+    """
+    <div style="text-align: right; margin-top: 50px; color: gray; font-size: 14px;">
+        <i>dibuat Tarno enginering</i>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
