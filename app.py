@@ -9,9 +9,20 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- CSS KUSTOM UNTUK MEMPERCANTIK TAMPILAN ---
+# --- CSS KUSTOM UNTUK BACKGROUND DAN TAMPILAN ---
 st.markdown("""
     <style>
+    /* 1. MENGUBAH BACKGROUND MENJADI WARNA GRADASI SEGAR */
+    [data-testid="stAppViewContainer"] {
+        background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    }
+    
+    /* 2. Membuat header atas transparan agar menyatu dengan background */
+    [data-testid="stHeader"] {
+        background-color: transparent;
+    }
+
+    /* 3. Membuat tombol proses terlihat keren */
     .stButton>button {
         background-color: #2e66f5;
         color: white;
@@ -20,18 +31,21 @@ st.markdown("""
         padding: 12px 24px;
         font-weight: bold;
         transition: all 0.3s ease 0s;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
     }
     .stButton>button:hover {
         background-color: #1b49bf;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
         transform: translateY(-2px);
     }
+    
+    /* 4. Teks Footer Tarno Enginering */
     .footer {
         text-align: right;
         margin-top: 50px;
-        color: #888888;
+        color: #4a4a4a;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 600;
         letter-spacing: 1px;
     }
     </style>
@@ -75,7 +89,7 @@ if file1 and file2:
         tombol_proses = st.button("⚙️ MULAI BERSIHKAN DATA", use_container_width=True)
 
     if tombol_proses:
-        # Menambahkan animasi loading yang keren
+        # Menambahkan animasi loading
         with st.spinner('Memindai dan membersihkan data... Mohon tunggu sebentar ⏳'):
             try:
                 # Membaca File 1
