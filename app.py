@@ -4,7 +4,7 @@ import io
 
 # --- KONFIGURASI HALAMAN (Wajib di baris paling atas) ---
 st.set_page_config(
-    page_title="Pembersih Data Pro | Tarno Engineering",
+    page_title="Pembersih Data | Tarno Engineering",
     page_icon="🚀",
     layout="wide"
 )
@@ -52,7 +52,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- BAGIAN HEADER ---
-st.title("🚀 Aplikasi Pembersih Data Pro")
+st.title("🚀 Aplikasi Pembersih Data")
 st.markdown("Selamat datang! Sistem ini akan membersihkan **File 2 (Data Target)** dari data yang sudah ada di **File 1 (Data Master)** secara otomatis berdasarkan kolom **no pesanan**.")
 
 st.divider() # Garis pembatas
