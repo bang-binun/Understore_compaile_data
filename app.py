@@ -68,7 +68,7 @@ with col2:
     st.warning("📄 **LANGKAH 2: Data Target**")
     file2 = st.file_uploader("Upload File 2 (Yang ingin dibersihkan)", type=["csv", "xlsx"])
 
-kolom_patokan = 'no pesanan'
+kolom_patokan = 'No. Pesanan'
 
 # Fungsi convert ke Excel
 def to_excel(df):
@@ -145,4 +145,4 @@ if file1 and file2:
                 st.error(f"Terjadi kesalahan saat memproses: {e}")
 
 # --- FOOTER TARNO ENGINERING ---
-st.markdown('<div class="footer"><i>dibuat Tarno enginering</i></div>', unsafe_allow_html=True)
+st.markdown('<div class="footer"><i>dibuat Bang Binun</i></div>', unsafe_allow_html=True)
