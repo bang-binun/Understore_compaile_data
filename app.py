@@ -4,7 +4,7 @@ import io
 
 # --- KONFIGURASI HALAMAN (Wajib di baris paling atas) ---
 st.set_page_config(
-    page_title="Pembersih Data | Tarno Engineering",
+    page_title="Pembersih Data | Bang Binun",
     page_icon="🚀",
     layout="wide"
 )
@@ -39,7 +39,7 @@ st.markdown("""
         transform: translateY(-2px);
     }
     
-    /* 4. Teks Footer Tarno Enginering */
+    /* 4. Teks Footer Bang Binun */
     .footer {
         text-align: right;
         margin-top: 50px;
@@ -53,7 +53,8 @@ st.markdown("""
 
 # --- BAGIAN HEADER ---
 st.title("🚀 Aplikasi Pembersih Data")
-st.markdown("Selamat datang! Sistem ini akan membersihkan **File 2 (Data Target)** dari data yang sudah ada di **File 1 (Data Master)** secara otomatis berdasarkan kolom **no pesanan**.")
+st.markdown("Selamat datang! Sistem ini akan membersihkan **File 2 (SHOPEE K2)** dari data yang sudah ada di **File 1 (SHOPEE K1)** secara otomatis berdasarkan kolom **No. Pesanan
+**.")
 
 st.divider() # Garis pembatas
 
@@ -68,7 +69,7 @@ with col2:
     st.warning("📄 **LANGKAH 2: Data Target**")
     file2 = st.file_uploader("Upload File 2 (Yang ingin dibersihkan)", type=["csv", "xlsx"])
 
-kolom_patokan = 'no pesanan'
+kolom_patokan = 'No. Pesanan'
 
 # Fungsi convert ke Excel
 def to_excel(df):
@@ -145,4 +146,4 @@ if file1 and file2:
                 st.error(f"Terjadi kesalahan saat memproses: {e}")
 
 # --- FOOTER TARNO ENGINERING ---
-st.markdown('<div class="footer"><i>dibuat Tarno enginering</i></div>', unsafe_allow_html=True)
+st.markdown('<div class="footer"><i>dibuat bang Binun</i></div>', unsafe_allow_html=True)
