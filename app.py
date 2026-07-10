@@ -145,4 +145,4 @@ if file1 and file2:
                 st.error(f"Terjadi kesalahan saat memproses: {e}")
 
 # --- FOOTER TARNO ENGINERING ---
-st.markdown('<div class="footer"><i>dibuat Tarno enginering</i></div>', unsafe_allow_html=True)
+st.markdown('<div class="footer"><i>dibuat bang binun</i></div>', unsafe_allow_html=True)
